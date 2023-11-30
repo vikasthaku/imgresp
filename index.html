@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Example</title>
+  <style>
+    /* Default styles for all screens */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Small screens (phones) */
+    @media only screen and (max-width: 600px) {
+      img {
+        max-width: 80%;
+      }
+    }
+
+    /* Medium screens (tablets) */
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      img {
+        max-width: 60%;
+      }
+    }
+
+    /* Large screens (laptops/desktops) */
+    @media only screen and (min-width: 901px) and (max-width: 1200px) {
+      img {
+        max-width: 50%;
+      }
+    }
+
+    /* Extra-large screens (large desktops) */
+    @media only screen and (min-width: 1201px) {
+      img {
+        max-width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Image Example</h1>
+  <img src="https://static.abplive.com/wp-content/uploads/sites/2/2020/09/07224656/shiv-1.jpg" alt="Responsive Image">
+</body>
+</html>
